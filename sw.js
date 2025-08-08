@@ -1,14 +1,13 @@
-// Basic offline-first service worker
-const CACHE_NAME = 'thailander-menu-v2'; // bump for fresh cache
+// Service worker with bumped cache name (v3) to avoid stale files
+const CACHE_NAME = 'thailanderporto-en-v3';
 const OFFLINE_URLS = [
   './',
   './index.html',
-  './styles.css',
-  './script.js',
+  './styles.css?v=3',
+  './script.js?v=3',
   './manifest.webmanifest',
   './icons/app-icon-192.png',
   './icons/app-icon-512.png',
-  // images
   './images/01.png','./images/02.png','./images/03.png','./images/04.png',
   './images/05.png','./images/06.png','./images/07.png','./images/08.png'
 ];
@@ -19,7 +18,9 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  event.waitUntil(caches.keys().then(keys => Promise.all(keys.map(k => k !== CACHE_NAME && caches.delete(k)))));
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.map(k => k !== CACHE_NAME && caches.delete(k))))
+  );
   self.clients.claim();
 });
 
