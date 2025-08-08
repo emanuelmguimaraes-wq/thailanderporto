@@ -1,7 +1,7 @@
 {
   "name": "Thailander — Menu",
   "short_name": "Thailander",
-  "start_url": ".",
+  "start_url": "/thailanderporto/",
   "display": "standalone",
   "background_color": "#101010",
   "theme_color": "#101010",

@@ -1,28 +1,14 @@
-# Thailander — Digital Menu (EN)
+# Thailander — Digital Menu (EN) for /thailanderporto/
 
-Static, mobile-first site with a basic PWA (offline after first visit), ready for **GitHub Pages**.
+This code is ready to run at:
+https://emanuelmguimaraes-wq.github.io/thailanderporto/
 
-## Structure
-- `index.html` — menu page (mobile-first)
-- `styles.css` — styles
-- `script.js` — interactions (lightbox, back-to-top, SW registration with RELATIVE path)
-- `manifest.webmanifest` — PWA (icons in `icons/`)
-- `sw.js` — service worker for cache
-- `images/01.png ... 08.png` — menu pages (English)
-- `icons/app-icon-192.png`, `icons/app-icon-512.png` — generated icons
-
-## Publish on GitHub Pages
-1. Create a repository, e.g. **thailander-menu-en**.
-2. Upload all files from this ZIP.
-3. Go to **Settings → Pages**:
-   - **Source**: *Deploy from a branch*
-   - **Branch**: `main` (root)
-4. Wait 1–2 minutes. The site should be live at:
-   ```
-   https://emanuelmguimaraes-wq.github.io/thailander-menu-en/ (fixed version)
-   ```
-5. Send me the final URL and I'll generate a **print-ready QR code**.
+## How to publish
+1. Place these files in the root of your `thailanderporto` repository.
+2. Also add your `images/` folder with files `01.png` ... `08.png` and the `icons/` folder with the app icons.
+3. Enable GitHub Pages in repo Settings → Pages → Deploy from branch → `main` branch, root.
+4. Wait 1–2 minutes, then open the URL above.
 
 ## Notes
-- SW registration uses a **relative path** (`./sw.js`) which is correct for GitHub Pages repositories.
-- Replace any menu image by overwriting the file in `images/` with the same name.
+- `start_url` in manifest is set to `/thailanderporto/`.
+- Service Worker uses relative paths for all assets.
