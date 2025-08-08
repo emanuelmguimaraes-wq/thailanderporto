@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:#0b0b0b;color:#f5f5f5}
+.topbar{position:sticky;top:0;z-index:10;display:flex;gap:.5rem;align-items:center;justify-content:space-between;padding:.6rem .9rem;background:rgba(10,10,10,.8);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid #1e1e1e}
+.brand{font-weight:700;letter-spacing:.5px}
+.nav{display:flex;gap:.7rem;overflow:auto;-webkit-overflow-scrolling:touch}
+.nav a{color:#e6e6e6;text-decoration:none;font-size:.95rem;padding:.35rem .55rem;border-radius:.6rem;border:1px solid transparent}
+.nav a:focus,.nav a:hover{border-color:#2a2a2a;background:#141414}
+
+.hero img{width:100%;height:auto;display:block}
+
+.section{padding:0 .6rem 1.4rem; scroll-margin-top:64px}
+.section h2{font-size:1.1rem;font-weight:700;margin:1rem .2rem}
+.menu-page{margin:0;border-radius:12px;overflow:hidden;border:1px solid #1b1b1b;box-shadow:0 1px 8px rgba(0,0,0,.35)}
+.menu-page img{width:100%;height:auto;display:block;touch-action:manipulation;cursor:zoom-in}
+
+.footer{padding:2rem 1rem;color:#bdbdbd;text-align:center;font-size:.85rem}
+
+.back-to-top{position:fixed;right:1rem;bottom:1rem;border:none;border-radius:999px;background:#1b1b1b;color:#fff;padding:.7rem .9rem;font-size:1.1rem;box-shadow:0 6px 20px rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:opacity .2s, transform .2s}
+.back-to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+.back-to-top:active{transform:scale(.97)}
+
+.lightbox{border:none;border-radius:12px;padding:0;background:rgba(0,0,0,.9);max-width:95vw;width:95vw}
+.lightbox::backdrop{background:rgba(0,0,0,.6)}
+.lightbox img{display:block;width:100%;height:auto;max-height:80vh}
+.lightbox button{position:absolute;top:.4rem;right:.4rem;border:none;background:transparent;color:#fff;font-size:1.4rem;opacity:.85}
+
+@media (min-width:768px){
+  .section{padding:0 1rem 1.6rem}
+  .section h2{font-size:1.25rem}
+}

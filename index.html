@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Thailander — Menu</title>
+  <meta name="description" content="Menu digital do restaurante Thailander." />
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#101010" />
+  <link rel="apple-touch-icon" href="icons/app-icon-192.png">
+  <link rel="preload" href="images/01.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Thailander</div>
+    <nav class="nav">
+      <a href="#recomendacoes">Recomendações</a>
+      <a href="#entradas">Entradas</a>
+      <a href="#principais">Pratos principais</a>
+      <a href="#sobremesas">Sobremesas</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="Capa">
+      <img src="images/01.png" alt="Thailander — Capa do menu" loading="eager" />
+    </section>
+
+    <section id="recomendacoes" class="section">
+      <h2>Recomendações</h2>
+      <figure class="menu-page">
+        <img src="images/02.png" alt="Página de recomendações" loading="lazy" />
+      </figure>
+    </section>
+
+    <section id="entradas" class="section">
+      <h2>Entradas</h2>
+      <figure class="menu-page">
+        <img src="images/03.png" alt="Entradas — página 1" loading="lazy" />
+      </figure>
+      <figure class="menu-page">
+        <img src="images/04.png" alt="Entradas — página 2" loading="lazy" />
+      </figure>
+    </section>
+
+    <section id="principais" class="section">
+      <h2>Pratos principais</h2>
+      <figure class="menu-page">
+        <img src="images/05.png" alt="Pratos principais — página 1" loading="lazy" />
+      </figure>
+      <figure class="menu-page">
+        <img src="images/06.png" alt="Pratos principais — página 2" loading="lazy" />
+      </figure>
+      <figure class="menu-page">
+        <img src="images/07.png" alt="Pratos principais — página 3" loading="lazy" />
+      </figure>
+    </section>
+
+    <section id="sobremesas" class="section">
+      <h2>Sobremesas</h2>
+      <figure class="menu-page">
+        <img src="images/08.png" alt="Sobremesas" loading="lazy" />
+      </figure>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Ampliação da imagem">
+    <img id="lightboxImg" alt="" />
+    <button id="lightboxClose" aria-label="Fechar">✕</button>
+  </dialog>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Thailander • Menu para consulta</small>
+  </footer>
+</body>
+</html>
