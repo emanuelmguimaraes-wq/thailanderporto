@@ -1,80 +1,80 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Thailander — Menu</title>
-  <meta name="description" content="Menu digital do restaurante Thailander." />
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="description" content="Digital menu for Thailander restaurant." />
+  <link rel="manifest" href="./manifest.webmanifest">
   <meta name="theme-color" content="#101010" />
-  <link rel="apple-touch-icon" href="icons/app-icon-192.png">
-  <link rel="preload" href="images/01.png" as="image" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link rel="apple-touch-icon" href="./icons/app-icon-192.png">
+  <link rel="preload" href="./images/01.png" as="image" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script defer src="./script.js"></script>
 </head>
 <body>
   <header class="topbar">
     <div class="brand">Thailander</div>
     <nav class="nav">
-      <a href="#recomendacoes">Recomendações</a>
-      <a href="#entradas">Entradas</a>
-      <a href="#principais">Pratos principais</a>
-      <a href="#sobremesas">Sobremesas</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#starters">Starters</a>
+      <a href="#mains">Main Dishes</a>
+      <a href="#desserts">Desserts</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="inicio" aria-label="Capa">
-      <img src="images/01.png" alt="Thailander — Capa do menu" loading="eager" />
+    <section class="hero" id="start" aria-label="Cover">
+      <img src="./images/01.png" alt="Thailander — Menu cover" loading="eager" />
     </section>
 
-    <section id="recomendacoes" class="section">
-      <h2>Recomendações</h2>
+    <section id="recommendations" class="section">
+      <h2>Recommendations</h2>
       <figure class="menu-page">
-        <img src="images/02.png" alt="Página de recomendações" loading="lazy" />
-      </figure>
-    </section>
-
-    <section id="entradas" class="section">
-      <h2>Entradas</h2>
-      <figure class="menu-page">
-        <img src="images/03.png" alt="Entradas — página 1" loading="lazy" />
-      </figure>
-      <figure class="menu-page">
-        <img src="images/04.png" alt="Entradas — página 2" loading="lazy" />
+        <img src="./images/02.png" alt="Recommendations page" loading="lazy" />
       </figure>
     </section>
 
-    <section id="principais" class="section">
-      <h2>Pratos principais</h2>
+    <section id="starters" class="section">
+      <h2>Starters</h2>
       <figure class="menu-page">
-        <img src="images/05.png" alt="Pratos principais — página 1" loading="lazy" />
+        <img src="./images/03.png" alt="Starters — page 1" loading="lazy" />
       </figure>
       <figure class="menu-page">
-        <img src="images/06.png" alt="Pratos principais — página 2" loading="lazy" />
-      </figure>
-      <figure class="menu-page">
-        <img src="images/07.png" alt="Pratos principais — página 3" loading="lazy" />
+        <img src="./images/04.png" alt="Starters — page 2" loading="lazy" />
       </figure>
     </section>
 
-    <section id="sobremesas" class="section">
-      <h2>Sobremesas</h2>
+    <section id="mains" class="section">
+      <h2>Main Dishes</h2>
       <figure class="menu-page">
-        <img src="images/08.png" alt="Sobremesas" loading="lazy" />
+        <img src="./images/05.png" alt="Main dishes — page 1" loading="lazy" />
+      </figure>
+      <figure class="menu-page">
+        <img src="./images/06.png" alt="Main dishes — page 2" loading="lazy" />
+      </figure>
+      <figure class="menu-page">
+        <img src="./images/07.png" alt="Main dishes — page 3" loading="lazy" />
+      </figure>
+    </section>
+
+    <section id="desserts" class="section">
+      <h2>Desserts</h2>
+      <figure class="menu-page">
+        <img src="./images/08.png" alt="Desserts" loading="lazy" />
       </figure>
     </section>
   </main>
 
-  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-  <dialog id="lightbox" class="lightbox" aria-label="Ampliação da imagem">
+  <dialog id="lightbox" class="lightbox" aria-label="Image enlargement">
     <img id="lightboxImg" alt="" />
-    <button id="lightboxClose" aria-label="Fechar">✕</button>
+    <button id="lightboxClose" aria-label="Close">✕</button>
   </dialog>
 
   <footer class="footer">
-    <small>© <span id="year"></span> Thailander • Menu para consulta</small>
+    <small>© <span id="year"></span> Thailander • View-only menu</small>
   </footer>
 </body>
 </html>
